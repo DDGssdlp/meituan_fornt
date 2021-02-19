@@ -1,6 +1,6 @@
 <template>
   <div class="m-iselect">
-    <span class="name">按省份选择:</span>
+    <span class="name-select">按省份选择:</span>
     <el-select
       v-model="pvalue"
       placeholder="省份">
