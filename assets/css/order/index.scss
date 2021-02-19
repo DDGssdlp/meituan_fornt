@@ -1,0 +1,133 @@
+.page-order {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    width: 1212px;
+    .navbar {
+        background: #FFF;
+        border: 1px solid #E5E5E5;
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding-bottom: 20px;
+        font-size: 16px;
+        color: #222;
+        padding: 30px 20px 0 30px;
+        dd {
+            font-size: 14px;
+            color: #666;
+            margin: 15px 0;
+            >i {
+                float: right;
+                margin-top: 3px;
+            }
+        }
+    }
+    .table {
+        background-color: #fff;
+        margin-left: 10px;
+        white-space: nowrap;
+        border: 1px solid #E5E5E5;
+        border-radius: 4px;
+        padding: 20px 20px 0;
+        .el-row {
+            padding: 20px 0;
+            height: 131px;
+            border-bottom: 1px solid #E5E5E5;
+            &:last-child {
+                border: none;
+            }
+            .el-col {
+                height: 90px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                &:nth-child(2) {
+                    align-items: flex-start;
+                    h4 {
+                        font-size: 16px;
+                        color: #222;
+                        margin: 10px 0 10px 0;
+                        font-weight: 500;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+        img {
+            width: 320px;
+            height: 200px;
+        }
+        .m-order {
+            .empty {
+                text-align: center;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+.title {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.meituan-my {
+    margin-bottom: 10px;
+}
+
+.m-life-downapp {
+    background: #fff;
+    height: 165px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    img {
+        width: 95px;
+        height: 95px;
+        margin-top: 10px;
+    }
+    p {
+        font-size: 16px;
+        color: #222;
+        font-weight: 500;
+    }
+    h4 {
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 2px;
+        span {
+            color: #EC5330;
+            margin-right: 5px;
+        }
+        em {
+            color: #3f3f3f;
+            font-style: normal;
+        }
+    }
+}
+
+.order-img {
+    height: 570px;
+}
+
+.imgnoorder {
+    margin-top: 100px;
+}
+
+.order-font {
+    line-height: 2em;
+    font-size: 22px;
+    color: #999;
+}
+
+.navigation-order {
+    margin-left: -20px;
+    margin-right: 20px;
+    width: 90%;
+}

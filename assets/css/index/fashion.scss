@@ -1,0 +1,122 @@
+.m-istyle {
+    width: 1170px;
+    margin-left: 20px;
+    margin-top: 0px;
+    dl {
+        height: 44px;
+        line-height: 44px;
+        background-color: rgb(56, 143, 232);
+        background-image: linear-gradient(to right, rgb(56, 143, 232) 3%, rgb(40, 143, 255) 100%);
+        display: flex;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #fff;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        cursor: pointer;
+        dt {
+            font-size: 18px;
+            margin-left: 13px;
+            margin-right: 10px;
+            padding: 0 5px;
+        }
+        dd {
+            padding: 0 5px;
+            position: relative;
+            &:after {
+                position: absolute;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-bottom: 7px solid #fff;
+                content: " ";
+                display: block;
+                width: 2px;
+                height: 0;
+                top: 37px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                display: none;
+            }
+            &.active:after {
+                display: block;
+            }
+        }
+    }
+    .ibody {
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        padding: 11px 10px 10px;
+        background-color: #fff;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        box-sizing: border-box;
+        border-left: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        >li {
+            width: 20%;
+            box-sizing: border-box;
+            background: #fff;
+            transition: background-color .5s;
+            height: 240px;
+            .el-card {
+                margin-top: 0px;
+                width: 230px;
+                height: 100%;
+                border: none;
+                .fashion-img {
+                    max-width: 110%;
+                    margin-top: -20px;
+                    width: 110%;
+                    height: 119px;
+                    margin-left: -19px;
+                    margin-bottom: 11px;
+                    text-align: center;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.desc {
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: -15px;
+    color: #999;
+}
+
+.name {
+    font-size: 14px;
+    line-height: 20px;
+    color: #222;
+    margin-left: -15px;
+    margin-bottom: 3px;
+    width: 210px;
+}
+
+.price {
+    font-size: 22px;
+    color: #f60;
+    margin-left: -15px;
+    line-height: 27px;
+}
+
+.price b {
+    font-weight: 400;
+    font-size: 14px;
+    font-size: 14px;
+}

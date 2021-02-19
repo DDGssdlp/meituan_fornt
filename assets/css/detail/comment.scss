@@ -1,0 +1,112 @@
+.comment-inner-card {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #303133;
+    transition: 0.3s;
+    margin-top: -60px;
+}
+
+.el-avatar--large {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.info {
+    margin-top: 8px;
+    float: left;
+    padding-left: 10px;
+    width: 778px;
+}
+
+.info .name {
+    font-size: 16px;
+    color: #222;
+    line-height: 22px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+}
+
+.info .date {
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+    float: right;
+}
+
+.rate-img {
+    float: left;
+    margin-top: 5px;
+}
+
+.info .desc {
+    margin-top: 25px;
+    font-size: 14px;
+    color: black;
+    line-height: 20px;
+    padding-top: 13px;
+    margin-left: 0px;
+}
+
+.img .el-avatar--large {
+    margin-top: 30px;
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+}
+
+.el-divider--horizontal {
+    display: block;
+    height: 1px;
+    width: 100%;
+}
+
+.divider {
+    margin-top: 90px;
+}
+
+.pageSize {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #18ab8f;
+    color: #FFF;
+}
+
+.el-pager li {
+    padding: 0 4px;
+    font-size: 16px;
+    min-width: 35.5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.el-pagination button:hover {
+    color: #18ab8f;
+}
+
+.el-pagination button {
+    width: 38px;
+    height: 38px;
+}
+
+.el-pagination .el-icon {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+    color: #e0bc1cbe;
+}
+
+.comment-inner-card .el-card__body {
+    margin-top: 30px;
+    margin-bottom: -19px;
+    padding: 20px;
+}

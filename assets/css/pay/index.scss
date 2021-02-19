@@ -1,0 +1,103 @@
+.page-pay {
+    width: 1170px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.el-icon-time {
+    font-size: 20px;
+    margin-right: 5px;
+    color: red;
+}
+
+.box-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.amount {
+    text-align: right;
+    font-size: 14px;
+    color: #f60;
+}
+
+.font-pay {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
+.amount-price {
+    font-size: 30px;
+    font-family: arial, sans-serif;
+}
+
+.card-size {
+    height: 200px;
+}
+
+.pay-buttom {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 200px;
+    height: 100px;
+}
+
+.pay-rount {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.button-pay {
+    width: 140px;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.qrccode {
+    width: 220px;
+    height: 220px;
+    border: 1px solid #aaa;
+    margin-left: 85px;
+}
+
+.qrccode img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #aaa;
+    margin: 9px 9px;
+}
+
+.time {
+    margin-top: 20px;
+}
+
+.amount {
+    margin-right: 10px;
+}
+
+.pay-img {
+    width: 371px;
+    height: 438px;
+}
+
+.el-button--goon:focus,
+.el-button--goon:hover {
+    background: #48D1CC;
+    border-color: #48D1CC;
+    color: #fff;
+}
+
+.el-button--goon {
+    color: #FFF;
+    background-color: #20B2AA;
+    border-color: #20B2AA;
+}
