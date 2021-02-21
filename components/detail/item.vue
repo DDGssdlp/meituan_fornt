@@ -35,7 +35,7 @@ export default {
     methods:{
         //创建购物车
         createCart: async function(){
-            this.$router.push('/cart')
+            this.$router.push('/productdetail')
             // let self=this;
             // //无产品库，把商品库的数据上传到购物车，通过id绑定关系
             // let {status,data:{code,id}} = await this.$axios.post('/cart/create',{
