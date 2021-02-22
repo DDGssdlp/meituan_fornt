@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import iselect from "./iselect.vue";
+import iselect from "./productIselect.vue";
 export default {
   components: {
     iselect

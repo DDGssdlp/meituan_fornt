@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import List from '@/components/cart/list.vue'
+import List from '@/components/cart/cartList.vue'
 export default {
   components:{
     List
@@ -58,7 +58,7 @@ export default {
   },
   methods:{
       submit: async function(){
-         location.href = '/pay'
+         this.$router.push('/pay')
             // const { status, data: { code, id }} = await this.$axios.post('/order/createOrder', {
             //     id: this.cartNo,
             //     price: this.cart[0].price,

@@ -62,7 +62,7 @@
 
 <script>
 import Affix from "easy-affix";
-import Summa from "@/components/productdetail/summary.vue";
+import Summa from "@/components/productdetail/productSummary.vue";
 import Comment from "@/components/detail/comment.vue";
 export default {
   data() {

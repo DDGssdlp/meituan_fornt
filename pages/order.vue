@@ -71,16 +71,16 @@
           <!-- name用做区分类型 -->
           <el-tab-pane label="全部订单" name="all">
             <!-- list就是订单信息 -->
-            <list :cur="cur" />
+            <order-list :cur="cur" />
           </el-tab-pane>
           <el-tab-pane label="待付款" name="unpay">
-            <list :cur="cur" />
+            <order-list :cur="cur" />
           </el-tab-pane>
           <el-tab-pane label="待使用" name="unuse">
-            <list :cur="cur" />
+            <order-list :cur="cur" />
           </el-tab-pane>
           <el-tab-pane label="待评价" name="unreplay">
-            <list :cur="cur" />
+            <order-list :cur="cur" />
           </el-tab-pane>
         </el-tabs>
       </el-col>
@@ -97,11 +97,11 @@
 </template>
 
 <script>
-import List from "@/components/order/list.vue";
+import OrderList from "@/components/order/orderList.vue";
 import Navigation from "@/components/index/navigation.vue";
 export default {
   components: {
-    List,
+    OrderList,
     Navigation
   },
   data() {

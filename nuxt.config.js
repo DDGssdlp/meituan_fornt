@@ -26,8 +26,6 @@ export default {
     plugins: [
         //{ src: "@/plugins/axios", ssr: true },
         '@/plugins/element-ui'
-
-
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -59,8 +57,6 @@ export default {
             }
         }
     },
-
-
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {

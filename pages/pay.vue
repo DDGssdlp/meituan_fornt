@@ -1,12 +1,12 @@
 <template>
   <div class="page-pay">
-    <el-card class="box-card">
+    <el-card class="pay-box-card">
       <h3 style="text-align: center;">
         <i class="el-icon-time"></i>
         请在 {{datetime}} 内完成支付, 超时订单会自动取消
       </h3>
     </el-card>
-    <el-card class="box-card">
+    <el-card class="pay-box-card">
       <el-row>
         <el-col :span="12">
           <div class="font-pay">

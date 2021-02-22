@@ -37,9 +37,9 @@
 </template>
 
 <script>
-import Crumbs from "@/components/detail/crumbs.vue";
-import Summa from "@/components/detail/summary.vue";
-import List from "@/components/detail/list.vue";
+import Crumbs from "@/components/detail/detailCrumbs.vue";
+import Summa from "@/components/detail/detailSummary.vue";
+import List from "@/components/detail/detailList.vue";
 import Comment from "@/components/detail/comment.vue";
 import Lovely from "@/components/products/lovely.vue";
 export default {

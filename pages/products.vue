@@ -15,9 +15,9 @@
 </template>
 
 <script>
-import Crumbs from "@/components/products/crumbs.vue";
-import Categroy from "@/components/products/categroy.vue";
-import List from "@/components/products/list.vue";
+import Crumbs from "@/components/products/productCrumbs.vue";
+import Categroy from "@/components/products/productCategroy.vue";
+import List from "@/components/products/productList.vue";
 import Lovely from "@/components/products/lovely.vue";
 import Amap from "@/components/public/map.vue";
 import Affix from "easy-affix";

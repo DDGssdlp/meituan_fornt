@@ -148,7 +148,7 @@
 </template>
 
 <script>
-import List from "@/components/order/list.vue";
+import List from "@/components/order/orderList.vue";
 import Navigation from "@/components/index/navigation.vue";
 export default {
   components: {
