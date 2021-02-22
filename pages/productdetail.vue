@@ -3,9 +3,8 @@
     <el-row>
       <el-col :span="24">
         <el-card class="box-card">
-             <summa />
+          <summa />
         </el-card>
-       
       </el-col>
     </el-row>
     <el-row>
@@ -46,9 +45,15 @@
     </el-row>
     <el-row>
       <el-col :span="24">
+        <h3 class="detail-title">商品详情</h3>
+        <el-card class="xiangqing" shadow="never"></el-card>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="24">
         <div id="anchor-pinglun" class="item"></div>
         <h3 class="detail-title">用户评价</h3>
-        <el-card class="pinglun" shadow="never"></el-card>
+        <comment :list="list"></comment>
       </el-col>
     </el-row>
     <el-backtop></el-backtop>
@@ -58,6 +63,7 @@
 <script>
 import Affix from "easy-affix";
 import Summa from "@/components/productdetail/summary.vue";
+import Comment from "@/components/detail/comment.vue";
 export default {
   data() {
     return {
@@ -65,13 +71,53 @@ export default {
       keyword: "",
       product: {},
       type: "",
-      list: [],
+     list: [
+        {
+          headSrc:
+            "https://img.meituan.net/avatar/34d5bb59ef2d0b6a1e7e7af0a993a95f22548.jpg",
+          name: "美团-张三丰",
+          rate: 4,
+          date: "2020年10月10日",
+          desc:
+            "越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧",
+          
+        },
+        {
+          headSrc:
+            "https://img.meituan.net/avatar/34d5bb59ef2d0b6a1e7e7af0a993a95f22548.jpg",
+          name: "美团-张三丰",
+          rate: 4,
+          date: "2020年10月10日",
+          desc:
+            "越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧",
+          imgList: [
+            // "https://p0.meituan.net/shaitu/baebe7c492940864ed334262097c78a9269667.jpg",
+            // "https://p0.meituan.net/shaitu/baebe7c492940864ed334262097c78a9269667.jpg",
+            "https://p0.meituan.net/shaitu/baebe7c492940864ed334262097c78a9269667.jpg"
+          ]
+        },
+        {
+          headSrc:
+            "https://img.meituan.net/avatar/34d5bb59ef2d0b6a1e7e7af0a993a95f22548.jpg",
+          name: "美团-张三丰",
+          rate: 4,
+          date: "2020年10月10日",
+          desc:
+            "越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧越来越贵了 快吃不起披萨了 披萨虽然很好吃 但真的是太贵太贵了 店铺活动少 没办法 如果不是带孩子来 应该不会再来了 主要是服务员的态度真的不太友好 好像我们吃不起披萨一样 要杯白开水都费死劲了 上菜慢的要死 大家慎重选择前往吧",
+          imgList: [
+            "https://p0.meituan.net/shaitu/baebe7c492940864ed334262097c78a9269667.jpg",
+            "https://p0.meituan.net/shaitu/baebe7c492940864ed334262097c78a9269667.jpg",
+            "https://p0.meituan.net/shaitu/baebe7c492940864ed334262097c78a9269667.jpg"
+          ]
+        }
+      ],
       login: false
     };
   },
   components: {
     Affix,
-    Summa
+    Summa,
+    Comment
   },
   mounted() {
     this.checkLogin();
@@ -136,10 +182,4 @@ export default {
 
 <style lang="scss" >
 @import "@/assets/css/productdetail/index.scss";
-.box-card {
-    height: 334px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-radius: 1rem;
-}
 </style>

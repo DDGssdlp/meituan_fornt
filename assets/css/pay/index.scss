@@ -101,3 +101,23 @@ p {
     background-color: #20B2AA;
     border-color: #20B2AA;
 }
+
+.el-radio__input.is-checked .el-radio__inner {
+    border-color: #20B2AA;
+    background: #20B2AA;
+}
+
+.el-radio__inner:hover {
+    border-color: #20B2AA;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item:not(.is-disabled):hover {
+    color: #20B2AA;
+}
+
+.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+    color: #20B2AA;
+    background-color: #fff;
+    border-right-color: #dcdfe6;
+    border-left-color: #dcdfe6;
+}

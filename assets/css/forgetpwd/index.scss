@@ -128,3 +128,12 @@
     height: 1px; //更改竖向分割线长度
     margin: 10px 460px;
 }
+
+.el-step__title.is-finish {
+    color: #31bbac;
+}
+
+.el-step__head.is-finish {
+    color: #31bbac;
+    border-color: #31bbac;
+}

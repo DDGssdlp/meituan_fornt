@@ -6,7 +6,9 @@
       <list :list="list" />
     </el-col>
     <el-col :span="5">
-      <amap v-if="point.length" :width="230" :height="250" :point="point" />
+      <affix :offset='-30'>
+        <amap v-if="point.length" :width="230" :height="250" :point="point" />
+      </affix>
       <lovely></lovely>
     </el-col>
   </el-row>
@@ -18,14 +20,15 @@ import Categroy from "@/components/products/categroy.vue";
 import List from "@/components/products/list.vue";
 import Lovely from "@/components/products/lovely.vue";
 import Amap from "@/components/public/map.vue";
-
+import Affix from "easy-affix";
 export default {
   components: {
     Crumbs,
     Categroy,
     List,
     Lovely,
-    Amap
+    Amap,
+    Affix
   },
   data() {
     return {

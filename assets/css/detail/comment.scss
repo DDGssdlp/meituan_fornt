@@ -16,7 +16,6 @@
     margin-top: 8px;
     float: left;
     padding-left: 10px;
-    width: 778px;
 }
 
 .info .name {
@@ -109,4 +108,137 @@
     margin-top: 30px;
     margin-bottom: -19px;
     padding: 20px;
+}
+
+.lovely-card {
+    width: 230px;
+    margin-left: 10px;
+}
+
+.inner-card {
+    margin: -5px -5px;
+    height: 200px;
+    width: 200px;
+    border: 1px solid #fff;
+    margin-top: 27px;
+}
+
+.img {
+    margin-top: -20px;
+    border-radius: 4px;
+    height: 106px;
+    width: 190px;
+    margin-left: -15px;
+    text-align: center;
+}
+
+.name {
+    font-size: 14px;
+    line-height: 20px;
+    color: #222;
+    margin-left: -15px;
+    margin-bottom: 3px;
+    width: 190px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.desc {
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: -15px;
+    color: #999;
+}
+
+.price {
+    font-size: 22px;
+    color: #f60;
+    margin-left: -15px;
+    line-height: 27px;
+}
+
+.price b {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.data-li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.total {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 7px;
+}
+
+.comment {
+    margin-top: 30px;
+}
+
+.comment .total .sort {
+    cursor: pointer;
+    float: right;
+    font-size: 12px;
+    color: #999;
+}
+
+.sort .on {
+    color: #00c9b3;
+}
+
+.sort span {
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.see {
+    margin-bottom: 20px;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+    color: #00c9b3;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: #00c9b3;
+    border-color: #00c9b3;
+}
+
+.el-button--warning {
+    color: #FFF;
+    background-color: #f90;
+    border-color: #f90;
+}
+
+.el-image__inner {
+    height: 234px;
+}
+
+li img {
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 24px;
+    height: 24px;
+    border-radius: 0;
+}
+
+.wifi {
+    margin-right: 15px;
+    line-height: 14px;
+    font-size: 12px;
+}
+
+.el-col-5 {
+    width: 160px;
 }
