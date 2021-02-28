@@ -67,7 +67,7 @@ import Comment from "@/components/detail/comment.vue";
 export default {
   data() {
     return {
-      activeName: "mendian",
+      activeName: "",
       keyword: "",
       product: {},
       type: "",

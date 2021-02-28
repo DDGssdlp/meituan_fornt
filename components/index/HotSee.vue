@@ -8,11 +8,13 @@
   
       </el-col>
     <el-col :span="22">
+      <a href="https://www.baidu.com">
         <el-image class="hot_image2"
       :src="url2"
       @click="handlerClick"
       fit="fill"></el-image>
-
+      <i class="gg-icon"></i>
+      </a>
       </el-col>
     
   </el-row>
@@ -34,7 +36,7 @@ export default {
       // 显示 本地图片
       //url: require('../../assets/img/lotus.jpeg'),
       url: 'https://gitee.com/ssdls/blogimg/raw/master/img/20210202190453.gif',
-      url2: 'http://acg.67jy.top/template/nex_manga_181008/neoconex/index/ads2.jpg',
+      url2: 'https://gitee.com/ssdls/blogimg/raw/master/img/20210228103050.jpg',
       HotSeeList:[{
         href: '/',
         title: '高洁璀璨的绿宝石 花京院典明（花京院个人'
