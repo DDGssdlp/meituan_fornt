@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <el-card class="box-card" shadow="never">
+    <el-card class="nava-box-card" shadow="never">
       <div class="title">美团导航</div>
       <el-row class="tac">
         <el-col :span="3">
