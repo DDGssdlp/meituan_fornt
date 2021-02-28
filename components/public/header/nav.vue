@@ -3,7 +3,7 @@
         <ul class="nav">
             <li class="list">
                 <nuxt-link to="/my">我的美团</nuxt-link>
-                <dl>
+                <dl style="box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);">
                     <dd><nuxt-link to="/order">我的订单</nuxt-link></dd>
                     <dd><nuxt-link to="/order">我的收藏</nuxt-link></dd>
                     <dd><nuxt-link to="/order">抵用券</nuxt-link></dd>
@@ -16,7 +16,7 @@
             </li>
             <li class="list bd">
                 <nuxt-link to="/center">商家中心</nuxt-link>
-                <dl>
+                <dl style="box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);">
                     <dd><nuxt-link to="/userCenter">登录商家中心</nuxt-link></dd>
                     <dd><nuxt-link to="/coop">我想合作</nuxt-link></dd>
                     <dd><nuxt-link to="/wap">免费手机开店</nuxt-link></dd>
