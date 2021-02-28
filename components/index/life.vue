@@ -1,6 +1,6 @@
 <template>
   <div class="m-life">
-    <el-row>
+    <el-row style="margin-bottom:-20px" >
       <el-col :span="14">
         <slider />
       </el-col>
@@ -161,4 +161,5 @@ export default {
 
 <style lang="scss">
 @import "@/assets/css/index/life.scss";
+
 </style>
