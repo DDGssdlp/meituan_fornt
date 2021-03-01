@@ -86,6 +86,7 @@
 
 <script>
 //import CryptoJS from 'crypto-js'
+import md5 from 'js-md5';
 export default {
   data: () => {
     return {
@@ -219,8 +220,8 @@ export default {
         })
         .then(res => {
           console.log("data", res.data);
-          if (res.data.code === 0 && res.data.login) {
-            localStorage.setItem("loginUser", this.username)
+          if (res.data.code ===0) {
+            localStorage.setItem("loginUser", md5(res.data.login.phoneNum))
             this.$router.push("/");
           } else if (res.data.code === 500) {
             this.$message({

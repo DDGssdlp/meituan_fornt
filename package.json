@@ -15,11 +15,18 @@
         "core-js": "^3.8.2",
         "easy-affix": "^1.0.8",
         "element-ui": "^2.15.0",
+        "js-md5": "^0.7.3",
         "node-sass": "^5.0.0",
         "nuxt": "^2.14.12",
         "qs": "^6.9.6",
         "sass-loader": "^10.1.1",
         "vuex": "^3.6.2"
     },
-    "devDependencies": {}
+    "devDependencies": {},
+    "config": {
+        "nuxt": {
+            "host": "0.0.0.0",
+            "port": 3000
+        }
+    }
 }

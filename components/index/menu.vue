@@ -2,7 +2,7 @@
   <div class="m-menu">
     <dl class="nav" @mouseleave="mouseleave">
       <dt>全部分类</dt>
-      <dd @mouseenter="mouseenter" v-for="(item,idx) in menu" :key="idx">
+      <dd @mouseenter="mouseenter" v-for="(item,idx) in menu.slice(0, 15)" :key="idx">
         <i :class="item.icon" />
         {{ item.name}}
         <span class="arrow" />>
